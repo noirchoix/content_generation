@@ -39,7 +39,7 @@
 
       <div class="nav-links">
         <a href="/dashboard">Dashboard</a>
-        <a href="#features">Features</a>
+        <a href="/features">Features</a>
         <a href="/dashboard">Login</a>
         <button class="menu-btn" type="button" aria-label="Menu">
           <span></span>
