@@ -549,6 +549,34 @@
   color: #2a2340;
 }
 
+/* Generated content typography */
+.result-card,
+.result-block p,
+.body-text {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.97rem;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+  color: #2f2747;
+}
+
+/* Improve readability of long outputs */
+.result-block p {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Headings inside result */
+.result-card h3 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.result-block h4 {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 /* Layout */
 .dashboard-shell {
   min-height: 100vh;
