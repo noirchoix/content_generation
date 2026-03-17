@@ -993,4 +993,20 @@
       box-sizing: border-box;
     }
   }
+  .dashboard-grid {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  gap: 1.25rem;
+  position: relative; /* create stacking context */
+}
+
+.form-panel {
+  position: relative;
+  z-index: 2;
+}
+
+.result-panel {
+  position: relative;
+  z-index: 1;
+}
 </style>

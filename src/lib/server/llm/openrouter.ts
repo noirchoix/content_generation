@@ -43,7 +43,7 @@ const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
 const OPENROUTER_DEFAULT_MODEL = 'google/gemma-3n-e4b-it:free';
 const DEEPSEEK_URL = 'https://api.deepseek.com/v1/chat/completions';
 const DEEPSEEK_DEFAULT_MODEL = 'deepseek-chat';
-const DEFAULT_TIMEOUT_MS = 8_000;
+const DEFAULT_TIMEOUT_MS = 45_000;
 
 function requireEnv(name: string, value: string | undefined): string {
   if (!value || !value.trim()) {
