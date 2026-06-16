@@ -1,0 +1,5 @@
+src/lib/helpers/cleanText.ts
+src/lib/helpers/validateInput.ts
+src/lib/server/llm/openrouter.ts
+src/lib/server/llm/buildPrompt.ts
+src/routes/api/generate/+server.ts
