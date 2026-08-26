@@ -1,15 +1,22 @@
 # AI Social Content Engine
 
-A SvelteKit-based content transformation app that turns long-form source material into platform-ready social media content for Instagram, LinkedIn, X, and TikTok.
+A SvelteKit/TypeScript content-transformation product that ingests uploaded text or web articles, extracts and bounds source content, streams platform-specific generation over SSE, and routes between LLM providers with explicit timeouts and fallback behavior.
 
-It supports two input modes:
+## Engineering profile
 
-- **Document mode** for uploaded text-based files
-- **Article URL mode** for extracting readable article content from a link
+This repository demonstrates:
 
-The app uses a structured generation pipeline, streams responses to the dashboard UI, supports copy/download actions, and is designed for lightweight deployment.
+- SvelteKit/Svelte 5 + TypeScript full-stack implementation
+- Uploaded-document and article-URL input modes
+- Server-side article extraction using Readability/JSDOM/Cheerio-style parsing
+- DeepSeek primary provider with OpenRouter fallback, timeout/abort behavior, and provider logging
+- Server-sent event streaming for generation status/output
+- Platform-specific prompt contracts for Instagram, LinkedIn, X, TikTok, and multiple content formats
+- Brand-memory/product workflow and explicit unsupported-claim constraints
 
----
+## Reliability and scope
+
+The lightweight retrieval/brand-memory path should not be advertised as production vector RAG. Server-side URL fetching also needs stronger SSRF/private-network protections for production use.
 
 ## Features
 
@@ -125,3 +132,4 @@ static/
   linkedin_svg.svg
   tiktok_svg.svg
   x_svg.webp
+```
